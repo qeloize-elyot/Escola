@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reclamações | CCM Vereador Luiz Zanchim</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.svg" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <img src="assets/logo.svg" alt="Logo CCMPR" />
+        <div class="logo-text"><strong>Colégio Cívico-Militar</strong><span>Vereador Luiz Zanchim</span></div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="calendario.html">Calendário</a></li>
+          <li><a href="achados.html">Achados e Perdidos</a></li>
+          <li><a href="reclamacoes.html" class="active">Reclamações</a></li>
+          <li><a href="sugestoes.html">Sugestões</a></li>
+          <li class="divider"></li>
+          <li id="nav-admin" class="hidden"><a href="admin.html">Painel Admin</a></li>
+          <li id="nav-login"><a href="login.html">Entrar</a></li>
+          <li><button class="btn btn-sm btn-outline hidden" id="btn-logout" style="width:100%;margin-top:.5rem;border-color:rgba(255,255,255,.4);color:white">Sair</button></li>
+        </ul>
+        <div class="user-info hidden" id="user-info"></div>
+      </nav>
+    </div>
+  </header>
+  <div class="overlay" id="overlay"></div>
+  <main class="main">
+    <h1 class="page-title">📝 Reclamações</h1>
+    <p class="page-subtitle">Canal oficial com filtro de linguagem. Você pode enviar de forma anônima.</p>
+    <div class="card">
+      <div class="card-header"><h2 class="card-title">Enviar reclamação</h2></div>
+      <form id="form-complaint">
+        <div class="form-group"><label for="comp-subject">Assunto (opcional)</label><input type="text" id="comp-subject" maxlength="80" /></div>
+        <div class="form-group"><label for="comp-text">Descreva a reclamação</label><textarea id="comp-text" required></textarea><div class="filter-warning" id="comp-warning"></div><p class="form-hint">Linguagem ofensiva será bloqueada.</p></div>
+        <div class="checkbox-row"><input type="checkbox" id="comp-anon" /><label for="comp-anon">Enviar de forma anônima</label></div>
+        <button type="submit" class="btn btn-primary">Enviar reclamação</button>
+      </form>
+    </div>
+    <div class="card"><div class="card-header"><h2 class="card-title">Acesso restrito</h2></div><div id="complaints-list"></div></div>
+  </main>
+  <footer class="footer"><strong>Colégio Estadual Cívico-Militar Vereador Luiz Zanchim</strong><br>Av. João Fragall, 144 – Parque São Pedro, Sarandi/PR</footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
