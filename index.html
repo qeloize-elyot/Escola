@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Colégio Estadual Cívico-Militar Vereador Luiz Zanchim</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="assets/logo.svg" />
 </head>
 <body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>Sarandi/PR · Programa Colégios Cívico-Militares</span>
+      <span>Tel: (44) 3264-2224</span>
+    </div>
+  </div>
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo-area">
-        <img src="assets/logo.svg" alt="Logo CCMPR" />
+        <div class="logo-mark" role="img" aria-label="Logo CCMPR"></div>
         <div class="logo-text">
           <strong>Colégio Cívico-Militar</strong>
           <span>Vereador Luiz Zanchim</span>
         </div>
       </a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       <nav class="nav" id="nav">
         <ul>
           <li><a href="index.html" class="active">Início</a></li>
@@ -31,74 +34,51 @@
           <li class="divider"></li>
           <li id="nav-admin" class="hidden"><a href="admin.html">Painel Admin</a></li>
           <li id="nav-login"><a href="login.html">Entrar</a></li>
-          <li><button class="btn btn-sm btn-outline hidden" id="btn-logout" style="width:100%;margin-top:0.5rem;border-color:rgba(255,255,255,0.4);color:white">Sair</button></li>
+          <li><button class="btn btn-sm btn-secondary hidden" id="btn-logout" style="width:100%;margin-top:.4rem">Sair</button></li>
         </ul>
         <div class="user-info hidden" id="user-info"></div>
       </nav>
     </div>
   </header>
   <div class="overlay" id="overlay"></div>
-
   <main class="main">
     <section class="hero">
-      <h1>Portal do Colégio</h1>
-      <p>Colégio Estadual Cívico-Militar Vereador Luiz Zanchim — Sarandi/PR</p>
-      <div class="hero-values">
-        <span>Disciplina</span>
-        <span>Respeito</span>
-        <span>Excelência</span>
+      <div class="hero-brand">
+        <div class="hero-logo" role="img" aria-label="Brasão CCMPR"></div>
+        <div class="hero-copy">
+          <h1>Portal institucional</h1>
+          <p>Colégio Estadual Cívico-Militar Vereador Luiz Zanchim. Comunicação oficial com a comunidade escolar.</p>
+          <div class="hero-meta">
+            <span class="pill">Disciplina</span>
+            <span class="pill">Respeito</span>
+            <span class="pill">Excelência</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-btns">
+      <div class="hero-actions">
         <a href="calendario.html" class="btn btn-primary">Calendário escolar</a>
-        <a href="noticias.html" class="btn btn-outline">Notícias</a>
+        <a href="noticias.html" class="btn btn-secondary">Notícias</a>
       </div>
     </section>
-
+    <p class="section-label">Serviços do portal</p>
+    <h2 class="section-title">Acesso rápido</h2>
     <div class="features">
-      <a href="achados.html" class="feature-card">
-        <span class="feature-label">Serviço</span>
-        <h3>Achados e Perdidos</h3>
-        <p>Registre itens perdidos ou encontrados nas dependências do colégio.</p>
-      </a>
-      <a href="reclamacoes.html" class="feature-card">
-        <span class="feature-label">Canal</span>
-        <h3>Reclamações</h3>
-        <p>Reporte problemas com filtro de linguagem e opção de anonimato.</p>
-      </a>
-      <a href="sugestoes.html" class="feature-card">
-        <span class="feature-label">Participação</span>
-        <h3>Sugestões</h3>
-        <p>Envie ideias de melhoria para a comunidade escolar.</p>
-      </a>
-      <a href="calendario.html" class="feature-card">
-        <span class="feature-label">Agenda</span>
-        <h3>Calendário</h3>
-        <p>Provas, eventos e avisos oficiais para toda a escola.</p>
-      </a>
+      <a href="achados.html" class="feature-card"><h3>Achados e Perdidos</h3><p>Registre objetos perdidos ou encontrados nas dependências do colégio.</p></a>
+      <a href="reclamacoes.html" class="feature-card"><h3>Reclamações</h3><p>Canal com filtro de linguagem e possibilidade de envio anônimo.</p></a>
+      <a href="sugestoes.html" class="feature-card"><h3>Sugestões</h3><p>Envie propostas de melhoria para a gestão e a comunidade escolar.</p></a>
+      <a href="calendario.html" class="feature-card"><h3>Calendário</h3><p>Provas, solenidades e avisos oficiais para todos os turnos.</p></a>
     </div>
-
     <div class="card">
-      <div class="card-header">
-        <h2 class="card-title">Sobre o portal</h2>
-      </div>
-      <p class="info-block">
-        Canal oficial de comunicação entre alunos, famílias e a administração do
-        <strong>Colégio Estadual Cívico-Militar Vereador Luiz Zanchim</strong>.
-        Reclamações e sugestões passam por filtro de linguagem e são resumidas
-        automaticamente para a direção.
-      </p>
-      <p class="info-block" style="margin-top:0.75rem">
-        Acesso institucional com e-mail @gov.br / @seed.pr.gov.br / @escola.pr.gov.br.
-      </p>
+      <div class="card-header"><h2 class="card-title">Sobre este portal</h2></div>
+      <p class="info-block">Espaço oficial de comunicação do <strong>Colégio Estadual Cívico-Militar Vereador Luiz Zanchim</strong>. Reclamações e sugestões são filtradas quanto à linguagem e consolidadas em resumo para a administração.</p>
+      <p class="info-block" style="margin-top:.65rem">Acesso preferencial com e-mail institucional (@gov.br, @seed.pr.gov.br, @escola.pr.gov.br).</p>
     </div>
   </main>
-
   <footer class="footer">
     <strong>Colégio Estadual Cívico-Militar Vereador Luiz Zanchim</strong>
     Av. João Fragall, 144 — Parque São Pedro, Sarandi/PR<br>
-    Tel: (44) 3264-2224 · Programa CCMPR
+    Tel: (44) 3264-2224 · Programa Colégios Cívico-Militares do Paraná
   </footer>
-
   <script src="js/app.js"></script>
 </body>
 </html>
