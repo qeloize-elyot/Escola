@@ -1,7 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <circle cx="100" cy="100" r="95" fill="#0f1c2e" stroke="#4a6b3a" stroke-width="8"/>
-  <circle cx="100" cy="100" r="78" fill="none" stroke="#6b8f55" stroke-width="3"/>
-  <text x="100" y="88" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="bold">CCMPR</text>
-  <text x="100" y="118" text-anchor="middle" fill="#c9a227" font-family="Arial,sans-serif" font-size="11">CÍVICO-MILITAR</text>
-  <text x="100" y="138" text-anchor="middle" fill="#aaa" font-family="Arial,sans-serif" font-size="9">PARANÁ</text>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2d4a"/>
+      <stop offset="100%" stop-color="#0c1e33"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="#3a5a32"/>
+  <circle cx="100" cy="100" r="90" fill="url(#g)"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#4a7040" stroke-width="2"/>
+  <path d="M100 52c-8 0-14 6-14 14v8c-22 6-36 22-40 36 12-6 24-8 36-6v28h36v-28c12-2 24 0 36 6-4-14-18-30-40-36v-8c0-8-6-14-14-14z" fill="#f0f4f8"/>
+  <rect x="68" y="112" width="64" height="30" rx="4" fill="#f0f4f8"/>
+  <text x="100" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#3a5a32">CCMPR</text>
+  <text x="100" y="162" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#b8c8b4" letter-spacing="1.2">CIVICO-MILITAR</text>
+  <text x="100" y="174" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#8a9a88" letter-spacing="2">PARANA</text>
 </svg>
